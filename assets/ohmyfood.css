@@ -1,0 +1,721 @@
+header, body
+{
+  font-family: Roboto;
+}
+
+body, footer
+{
+ 
+  margin: 0px;
+  animation: spinner-opacity 3s linear;
+
+}
+
+.logo
+{
+  text-align: center;
+}
+
+main
+{
+  background-color: rgb(247 247 247);
+  padding: 40px 15px;
+  
+}
+
+header
+{
+  margin-bottom: 5%;
+}
+
+.ohmyfood
+{
+    margin-top: 30px;
+    width: 200px;
+
+}
+
+li::marker
+{
+  text-decoration: none;
+}
+a
+{
+  color: black;
+  text-decoration: none;
+}
+
+
+.heart
+{
+  position: absolute;
+}
+
+h1
+{
+    text-align: center;
+    font-weight: 800;
+    font-size: 23px;
+    padding: 9px 70px;
+
+}
+
+h2{
+  line-height: 0px;
+  margin-bottom: 40px;
+  padding-left: 15px;
+}
+
+.number
+{
+  color: white;
+  background-color: #9356DC;
+  border-radius: 44%;
+  padding: 2px 7px 2px 7px;
+  position: relative;
+  right: 30px;
+}
+
+
+ul
+{
+  list-style-type: none;
+  padding: 20px;
+}
+.nav_ul
+{
+  background-color: #f3f2f2;
+  padding: 28px;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: rgb(199, 196, 196) 3px 10px 10px;
+  margin-bottom: 30px;
+  
+}
+
+.icon-nav
+{
+  color: rgb(175, 173, 173);
+  padding-right: 20px;
+}
+
+p.discover
+{
+
+  font-weight: 200;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.restau_legende p{
+margin: 0;
+font-family: Roboto;
+font-size: 14px;
+
+
+}
+
+.restau-heart
+{
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+
+}
+
+.bouton-coeur
+{
+  position: relative;
+  height: 20px;
+  width: 20px;
+
+}
+
+.bouton-coeur-vide 
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.empty {
+  font-size: 20px;
+}
+
+.bouton-coeur-vide:active
+{
+  animation: heart-disappearance 300ms forwards;
+}
+
+.bouton-coeur-rempli
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  border: none;
+  padding: 0;
+  transform-origin: 50% 100%;
+  transform:scale(0);
+  background-color: transparent;
+  
+  
+}
+
+.bouton-coeur-vide:active + .bouton-coeur-rempli
+{
+  animation: heart-growth 300ms ease-in-out forwards;
+}
+
+.full {
+  font-size: 20px;
+  background :linear-gradient(#FF79DA, #9356DC) ;
+  -webkit-background-clip: text ;
+  color: transparent;
+
+}
+
+.menu_choix
+{
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.nav_ul:hover
+{
+  background-color: #e0c7ff;
+}
+
+.description
+{
+  background-color: rgb(247 247 247);
+  padding-bottom: 35px;
+  margin-bottom: 20%;
+}
+
+.discover
+{
+  padding: 7px 57px;
+  line-height: 20px;
+  font-weight: 200;
+
+}
+
+.img_menu
+{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  vertical-align: middle;
+}
+
+.restau-new
+{
+  position: absolute;
+  color: #278870;
+  background-color: #99e2d0;
+  border-radius: 3px;
+  padding: 5px 12px;
+  top: 10px;
+  right: 10px;
+
+}
+
+.restau-new p 
+{
+  color: #333333;
+  margin: unset;
+}
+
+.restau_legende
+{
+  height: 70px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.restau_legende h3
+{
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-family: "Roboto";
+}
+
+.explore
+{
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  width: 190px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  font-size: 17px;
+  box-shadow: 2px 3px 2px lightgray;
+  margin: auto;
+  padding-top: 22px;
+  font-weight: 400;
+}
+
+.elem2, .elem4
+{
+  padding-left: 25px;
+}
+
+.box-restaurant {
+ 
+  box-shadow: 3px 4px 5px lightgrey;
+  border-radius: 15px;
+  width: 100%;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+ 
+
+}
+
+.new1, .new2
+{
+  background-color: #99e2d0;
+  width: 58px;
+  margin: 17px;
+  padding: 6px;
+  color: #13ad87;
+  border-radius: 1px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.new1
+{
+  position: absolute;
+  top: 922px;
+  left: 261px;
+
+  
+}
+
+.new2
+{
+  position: absolute;
+  top: 1200px;
+  left: 261px;
+}
+
+
+footer
+{
+  background-color: #333333;
+
+}
+.list
+{
+
+  list-style-type: none;
+  color: white;
+  line-height: 25px;
+  padding-left: 15px;
+  position: relative;
+  bottom: 35px;
+}
+
+.paris-bel
+{
+    text-align: center;
+    border: none;
+    border-bottom: 1px lightgray solid;
+    background-color: #eae7e7;
+    padding: 15px;
+   
+}
+
+.ville 
+{
+  width: 100%;
+  border-top: 2px grey solid;
+  border-bottom: 1px lightgray solid;
+  background-color: #eae7e7;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  
+}
+
+.coeur1, .coeur2, .coeur3, .coeur4
+{
+  position: absolute;
+ 
+}
+
+.bloc
+{
+  margin: 10px;
+}
+
+.coeur1
+{
+  top: 1150px; 
+}
+.coeur2
+{
+  top: 1440px;
+}
+.coeur3{
+  top: 1725px;
+}
+
+.coeur4
+{
+  top: 2010px;
+}
+
+
+.icon 
+{
+  padding-right: 10px;
+}
+
+.map-ville
+{
+ display: flex;
+ 
+}
+
+.check
+
+{
+
+  background: #99e2d0;
+  color: white;
+  padding: 12px;
+  border-radius: 50px;
+  animation: check-round 1s 1;
+ 
+}
+
+.bloc
+{
+  background-color: white;
+  border: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #d0d0d0;
+  animation: menu-appearance 600ms ease-in-out both;
+}
+
+.restauration
+{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.box-restaurant
+{
+  box-shadow: 0 4px 8px #b6b6b6;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.box-restaurant a 
+{
+
+  display: block;
+  text-decoration: none;
+  color: black;
+
+
+}
+
+
+
+
+.spinner
+{
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  margin: auto;
+  left:0; right: 0; top: 0; bottom: 0;
+  animation: spinner-opacity 3s forwards;
+ 
+  
+}
+
+.spinner div
+{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 10px solid transparent;
+  border-top-color: #99E2D0;
+border-radius: 50%;
+animation: spinnerOne 1.5s linear infinite;
+
+}
+
+
+.spinner div:nth-child(2)
+{
+ 
+  border: 10px solid transparent;
+  border-bottom-color: #9356DC;
+  animation: spinnerTwo 1.5s linear infinite;
+}
+
+
+
+footer a 
+{
+  color: white;
+}
+
+@keyframes heart-disappearance
+{
+
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes spinner-disappearance
+{
+
+}
+
+@keyframes spinner-opacity
+{
+  from
+  {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  to 
+  {
+    visibility: hidden;
+    opacity: 0.1;
+  }
+}
+
+
+
+
+
+
+
+
+{
+ from 
+ {
+   opacity: 0.2;
+
+ }
+ to 
+ {
+   opacity: 0.8;
+ }
+  
+}
+
+@keyframes heart-growth
+{
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes spinnerOne
+{
+
+0%{transform: rotate(0deg); border-width: 20px;}
+50%{transform: rotate(180deg); border-width: 2px;}
+100%{transform: rotate(360deg); border-width: 20px;}
+}
+
+@keyframes spinnerTwo
+{
+
+0%{transform: rotate(0deg); border-width: 2px;}
+50%{transform: rotate(180deg); border-width: 20px;}
+100%{transform: rotate(360deg); border-width: 2px;}
+}
+
+
+
+@keyframes check-round {
+ 
+  0%{ transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+  
+}
+
+@keyframes bande {
+from
+ {margin-right: -60px}
+ to 
+ {margin-right: 0}
+
+}
+
+
+
+  @font-face {
+    font-family: "shrikhand";
+    src: url("./Shrikhand/Shrikhand-Regular.otf") format("truetype");
+  }
+
+  .title-omf
+  {
+    font-family: shrikhand-regular;
+    color: white;
+    padding: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 750px) and (max-width: 1700px){
+  
+  .restauration
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  }
+
+  @media screen and (min-width: 750px){
+
+  .box-restaurant
+  {
+    width: 48%;
+
+  }
+
+
+  
+  
+  }
+  
+
+  @media screen and (min-width: 790px){
+
+
+    body{
+      
+   margin: auto;
+    }
+
+  
+
+    h1 
+    {
+      padding: 40px 70px;
+    }
+    .discover
+    {
+      text-align: center;
+      padding: 0 57px;
+    }
+    .explore
+    {
+      margin-left: 40%;
+    }
+
+    header
+    {
+      margin-bottom: 5%;
+    }
+
+    .description
+    {
+      margin-bottom: 12%;
+    }
+
+    .ville 
+    {
+      width: 100%;
+    }
+    h2
+    {
+      text-align: center;
+    }
+    ul
+    {
+      display: flex;
+      justify-content: space-around;
+    }
+    .elem2, .elem4
+    {
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+    .elem4
+    {
+      margin-top: 30px;
+    }
+
+    footer 
+    {
+      
+      padding: 5%;
+      padding-top: 0;
+    }
+    
+    .title-omf
+    {
+      text-align: center;
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+
+    .list
+    {
+      bottom: 20px;
+    } 
+
+
+
+
+
+
+
+   
+    
+  }
+
+

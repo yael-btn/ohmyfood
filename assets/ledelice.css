@@ -56,12 +56,9 @@ main
     border-top-left-radius: 30px;
     padding-bottom: 50px;
     animation: fadein 2s ease-in;
+
 }
 
-.entrees
-{
-    animation: fadein 2s forwards;
-}
 .coeur-titre
 {
     display: flex;
@@ -281,6 +278,7 @@ background-color: white;
   }
 
 
+
 .icon-test .detail 
 {
     display: flex;
@@ -303,7 +301,7 @@ background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
-    margin: auto;
+    margin:auto;
 
 }
 
@@ -311,6 +309,14 @@ background-color: white;
 {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.restau-heart
+{
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+
 }
 
 .bouton-coeur
@@ -340,6 +346,7 @@ width: 20px;
   animation: heart-disappearance 300ms forwards;
 }
 
+
 .bouton-coeur-rempli
 {
   position: absolute;
@@ -352,13 +359,7 @@ width: 20px;
   transform:scale(0);
   background-color: transparent;
 }
-@keyframes fadein 
-{
-    from 
-    {opacity: 0;}
-    to 
-    { opacity: 1;}
-}
+
 .bouton-coeur-vide:active + .bouton-coeur-rempli
 {
   animation: heart-growth 300ms ease-in-out forwards;
@@ -381,13 +382,17 @@ width: 20px;
     transform: scale(1);
   }
 }
-
+@keyframes fadein 
+{
+    from 
+    {opacity: 0;}
+    to 
+    { opacity: 1;}
+}
 
 
 
 @media screen and (min-width: 750px){
-
-
     .restaurant-menu
     {
         max-width: 750px;
@@ -444,6 +449,5 @@ width: 20px;
         display: flex;
         justify-content: space-around;
     }
-
       }
     
