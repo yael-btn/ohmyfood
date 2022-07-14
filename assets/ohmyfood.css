@@ -607,7 +607,7 @@ from
 
 
 
-  @media screen and (min-width: 750px) and (max-width: 1700px){
+  @media screen (min-width: 200px) and (max-width: 1500px){
   
   .restauration
   {
@@ -615,24 +615,13 @@ from
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  }
-
-  @media screen and (min-width: 750px){
-
+  
   .box-restaurant
   {
     width: 48%;
 
   }
-
-
-  
-  
-  }
-  
-
-  @media screen and (min-width: 790px){
-
+    
 
     body{
       
@@ -708,14 +697,7 @@ from
       bottom: 20px;
     } 
 
-
-
-
-
-
-
-   
-    
+  
   }
 
 
