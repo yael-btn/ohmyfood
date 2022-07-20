@@ -607,7 +607,7 @@ from
 
 
 
-  @media screen (min-width: 200px) and (max-width: 1500px){
+  @media screen and (min-width: 700px){
   
   .restauration
   {
